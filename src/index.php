@@ -1,7 +1,7 @@
 <html>
-   <body>
+   <body style="background-image:url(http://wallpapercave.com/wp/80MQNXF.png)">
       <form action="/" method="post" autocomplete="off">
-         <p>Riddle answer: <input type="text" name="answer" /></p>
+         <p>Password: <input type="text" name="answer" /></p>
          <p><input type="submit" /></p>
       </form>
       <br>
@@ -11,7 +11,7 @@
       $answerThree = 'three';
 
       if (stripos($_POST["answer"], $answerOne) !== false){
-         echo '<a href="http://www.exampleone.com">http://www.exampleone.com</a>';
+         echo '<h1><a href="http://imgur.com/Sx3cXPG">http://imgur.com/Sx3cXPG</a></h1>';
       } elseif (stripos($_POST["answer"], $answerTwo) !== false){
          echo '<a href="http://www.exampletwo.com">http://www.exampletwo.com</a>';
       } elseif (stripos($_POST["answer"], $answerThree) !== false){
