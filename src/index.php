@@ -1,22 +1,44 @@
-<html>
-   <body style="background-image:url(http://wallpapercave.com/wp/80MQNXF.png)">
-      <form action="/" method="post" autocomplete="off">
-         <p>Password: <input type="text" name="answer" /></p>
-         <p><input type="submit" /></p>
-      </form>
-      <br>
-      <?php
-      $answerOne = 'eye';
-      $answerTwo = 'two';
-      $answerThree = 'three';
 
-      if (stripos($_POST["answer"], $answerOne) !== false){
-         echo '<h1><a href="http://imgur.com/Sx3cXPG">http://imgur.com/Sx3cXPG</a></h1>';
-      } elseif (stripos($_POST["answer"], $answerTwo) !== false){
-         echo '<a href="http://www.exampletwo.com">http://www.exampletwo.com</a>';
-      } elseif (stripos($_POST["answer"], $answerThree) !== false){
-         echo '<a href="http://www.examplethree.com">http://www.examplethree.com</a>';
-      }
+<html>
+   <head>
+      <style>
+         body {
+            background-image: url("http://orig13.deviantart.net/2a48/f/2013/195/3/f/unicorn_galaxy_by_petitemodevil-d6dhd9t.png");
+         }
+
+         form {
+           position: absolute;
+           top: 50%;
+           left: 50%;
+           margin-right: -50%;
+           transform: translate(-50%, -50%)
+         }
+      </style>
+   </head>
+   <body>
+      <div id="form">
+         <form action="/" method="post" autocomplete="off">
+            <h3 style="position: absolute; top: -40%; left: 50%; margin-right: -50%; transform: translate(-50%, -50%)">PASSWORD</h3>
+            <p><input type="text" name="answer" /></p>
+         </form>
+         <br>
+      </div>
+
+         <?php
+         $answerOne = 'eye';
+         $answerTwo = 'two';
+         $answerThree = 'three';
+
+         if (stripos($_POST["answer"], $answerOne) !== false){
+            echo '<h1><a href="http://imgur.com/Sx3cXPG" target="_blank"
+                  style="position: fixed; top: 60%; left: 50%; margin-right: -50%; transform: translate(-50%, -50%)">http://imgur.com/Sx3cXPG</a></h>';
+         } elseif (stripos($_POST["answer"], $answerTwo) !== false){
+            echo '<h1><a href="http://imgur.com/Sx3cXPG" target="_blank"
+                  style="position: fixed; top: 60%; left: 50%; margin-right: -50%; transform: translate(-50%, -50%)">http://imgur.com/Sx3cXPG</a></h>';
+         } elseif (stripos($_POST["answer"], $answerThree) !== false){
+            echo '<h1><a href="http://imgur.com/Sx3cXPG" target="_blank"
+                  style="position: fixed; top: 60%; left: 50%; margin-right: -50%; transform: translate(-50%, -50%)">http://imgur.com/Sx3cXPG</a></h>';
+         }
       ?>
    </body>
 </html>
