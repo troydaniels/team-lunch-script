@@ -26,18 +26,18 @@
 
          <?php
          $answerOne = 'eye';
-         $answerTwo = 'two';
-         $answerThree = 'three';
+         $answerTwo = '80';
+         $answerThree = 'silence';
 
          if (stripos($_POST["answer"], $answerOne) !== false){
             echo '<h1><a href="http://imgur.com/Sx3cXPG" target="_blank"
                   style="position: fixed; top: 60%; left: 50%; margin-right: -50%; transform: translate(-50%, -50%)">http://imgur.com/Sx3cXPG</a></h>';
          } elseif (stripos($_POST["answer"], $answerTwo) !== false){
-            echo '<h1><a href="http://imgur.com/Sx3cXPG" target="_blank"
-                  style="position: fixed; top: 60%; left: 50%; margin-right: -50%; transform: translate(-50%, -50%)">http://imgur.com/Sx3cXPG</a></h>';
+            echo '<h1><a href="http://imgur.com/zKnp3aT" target="_blank"
+                  style="position: fixed; top: 60%; left: 50%; margin-right: -50%; transform: translate(-50%, -50%)">http://imgur.com/zKnp3aT</a></h>';
          } elseif (stripos($_POST["answer"], $answerThree) !== false){
-            echo '<h1><a href="http://imgur.com/Sx3cXPG" target="_blank"
-                  style="position: fixed; top: 60%; left: 50%; margin-right: -50%; transform: translate(-50%, -50%)">http://imgur.com/Sx3cXPG</a></h>';
+            echo '<h1><a href="http://imgur.com/73qBBoN" target="_blank"
+                  style="position: fixed; top: 60%; left: 50%; margin-right: -50%; transform: translate(-50%, -50%)">http://imgur.com/73qBBoN</a></h>';
          }
       ?>
    </body>
