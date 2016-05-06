@@ -25,9 +25,9 @@
       </div>
 
          <?php
-         $answerOne = 'eye';
-         $answerTwo = '80';
-         $answerThree = 'silence';
+         $answerOne = '80';
+         $answerTwo = '118.5';
+         $answerThree = 'eye';
 
          if (stripos($_POST["answer"], $answerOne) !== false){
             echo '<h1><a href="http://imgur.com/Sx3cXPG" target="_blank"
